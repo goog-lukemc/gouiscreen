@@ -1,0 +1,38 @@
+
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 75px auto 75px;
+  grid-template-columns: minmax(200px, 250px) 9fr;
+}
+
+
+[id='3661559495']{
+  grid-column: 1 / 3;
+  background-color: #1a73e8;
+}
+
+[id='3644781876']{
+  background-color: yellow;
+  grid-row: 2 / span 2;
+}
+
+[id='3695114733']{
+  background-color: green;
+
+}
+
+[id='3678337114']{
+  background-color: lightblue;
+}
