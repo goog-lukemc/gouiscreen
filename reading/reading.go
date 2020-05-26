@@ -4,6 +4,7 @@ import (
 	"gihthub.com/goog-lukemc/gouielement"
 )
 
+// Reader create a readable content
 func Reader(content *gouielement.ReadingData, comp *gouielement.ElementLib, parent string) error {
 	if content == nil {
 		content = getDefaultContent(parent, v)
