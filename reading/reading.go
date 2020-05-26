@@ -4,11 +4,11 @@ import (
 	"gihthub.com/goog-lukemc/gouielement"
 )
 
-func Reader(content *goReadingData, comp *gouielement.ElementLib, parent string) error {
+func Reader(content *gouielement.ReadingData, comp *gouielement.ElementLib, parent string) error {
 	if content == nil {
 		content = getDefaultContent(parent, v)
 	}
-	
+	comp.Readable(content)
 
 }
 
@@ -21,6 +21,6 @@ func getDefaultContent(parent string, comp *gouielement.ElementLib) *gouielement
 	c.Content = append(c.Content,
 		comp.Span(parent,t1)
 	)
-	
+
 	return c
 }
