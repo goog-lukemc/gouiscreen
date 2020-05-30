@@ -1,0 +1,29 @@
+<html id="html"><head id="head">
+	<meta charset="utf-8">
+	<title id="title">Wellness</title>
+</head>
+
+<body id="body" data-gr-c-s-loaded="true">
+
+	<script src="/js/wasm_exec.js"></script>
+	<script>
+		if (!WebAssembly.instantiateStreaming) { // polyfill
+			WebAssembly.instantiateStreaming = async (resp, importObject) => {
+				const source = await (await resp).arrayBuffer();
+				return await WebAssembly.instantiate(source, importObject);
+			};
+		}
+
+		const go = new Go();
+		let mod, inst;
+		WebAssembly.instantiateStreaming(fetch("/wasm/app.wasm"), go.importObject).then((result) => {
+			go.run(result.instance)
+
+		}).catch((err) => {
+			console.error(err);
+		});
+
+	</script>
+
+
+<div class="grid container" id="696411276"><article id="1396051107"><h1 id="752519589">Welcome to the Go UI framework using Webassembly</h1><h3 id="735741970">Calm down!, this project is a WIP</h3><section id="718964351"><img src="/image/go-logo_blue.svg" width="40" height="30" id="662856038"><span id="679633657">Welcome to the goui framework. Have fun!</span></section></article></div></body></html>
