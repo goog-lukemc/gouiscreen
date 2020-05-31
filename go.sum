@@ -1,0 +1,10 @@
+github.com/goog-lukemc/gouidom v0.0.8 h1:s+l4J9UChX7bZPmYCUCdjGm9F7KhVCC77J32/a2f9xU=
+github.com/goog-lukemc/gouidom v0.0.8/go.mod h1:evcIr3p0ZdKo+ibCEJ6W4DLZvz3K24Fi0jUF73x4W5A=
+github.com/goog-lukemc/gouidom v0.0.11 h1:dwS22SfbhoXw2j0plH5OqYWHN5ogjHzBliRzIyHEaaM=
+github.com/goog-lukemc/gouidom v0.0.11/go.mod h1:evcIr3p0ZdKo+ibCEJ6W4DLZvz3K24Fi0jUF73x4W5A=
+github.com/goog-lukemc/gouielement v0.0.20 h1:XahsTjBFxo0rlLeuPXNJNL4+7LdMoajG86TRRxN2EDo=
+github.com/goog-lukemc/gouielement v0.0.20/go.mod h1:/NNP9m4an+/s142Z7VFtYpaHKT+XvrHz6J1qYUnckgs=
+github.com/goog-lukemc/gouielement v0.0.21 h1:MpohhhxDIy6soV77SsrQbfqn1vYiGW9BduYZeg+3reQ=
+github.com/goog-lukemc/gouielement v0.0.21/go.mod h1:/N7g+usXFNmIvBMB2jt2FKSKPGUi2RAnDpvBlU37fYw=
+github.com/goog-lukemc/gouielement v0.0.22 h1:pfW5+mVFe6cpJeEUr3cI3IUbjRpvCh3wnCUMxh20PQc=
+github.com/goog-lukemc/gouielement v0.0.22/go.mod h1:/N7g+usXFNmIvBMB2jt2FKSKPGUi2RAnDpvBlU37fYw=
