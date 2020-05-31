@@ -45,9 +45,9 @@ func getDefaultContent() *WorksData {
 				Subtitle: "And Here we are!",
 				Content: []*gouielement.ContentConfig{
 					&gouielement.ContentConfig{
-						Typ: gouidom.HTMLTag.Span,
+						Typ: gouidom.HTMLTag.Img,
 						CFG: map[string]interface{}{
-							"img": map[string]string{"src": "/image/go-logo_blue.svg"},
+							"ea": map[string]string{"src": "/image/go-logo_blue.svg"},
 						},
 					},
 					&gouielement.ContentConfig{
