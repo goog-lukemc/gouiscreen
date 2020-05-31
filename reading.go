@@ -22,7 +22,7 @@ func DocReader(parent string, comp *gouielement.ElementLib, works *WorksData) {
 
 	// Create the left side bar which create a left had list of the documents in the collection
 	// TODO: Implement
-	comp.Div(gouielement.PathOf(cd), map[string]string{})
+	comp.Div(gouielement.PathOf(cd), map[string]string{}, "works-index")
 
 	// Content Body
 	for _, a := range works.Articles {
@@ -31,7 +31,7 @@ func DocReader(parent string, comp *gouielement.ElementLib, works *WorksData) {
 
 	// Create a right hand index of the sub headings in the document
 	// TODO: Implement
-	comp.Div(gouielement.PathOf(cd), map[string]string{})
+	comp.Div(gouielement.PathOf(cd), map[string]string{}, "article-index")
 
 }
 
@@ -44,6 +44,12 @@ func getDefaultContent() *WorksData {
 				Title:    "Welcome to the Go UI framework using Webassembly",
 				Subtitle: "And Here we are!",
 				Content: []*gouielement.ContentConfig{
+					&gouielement.ContentConfig{
+						Typ: gouidom.HTMLTag.Span,
+						CFG: map[string]interface{}{
+							"img": map[string]string{"src": "/image/go-logo_blue.svg"},
+						},
+					},
 					&gouielement.ContentConfig{
 						Typ: gouidom.HTMLTag.Span,
 						CFG: map[string]interface{}{
