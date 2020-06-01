@@ -62,7 +62,8 @@ func getDefaultContent() *WorksData {
 					&gouielement.ContentConfig{
 						Typ: gouidom.HTMLTag.Span,
 						CFG: map[string]interface{}{
-							"text": "The guiding principal of this project is to take a subset of the existing HTML, and javascript specifications and port them to gos webassembly implementation. From these building block UI can be represented in idiomatic go code without the need for markup.",
+							"secheading": "The Good Stuff",
+							"text":       "The guiding principal of this project is to take a subset of the existing HTML, and javascript specifications and port them to gos webassembly implementation. From these building block UI can be represented in idiomatic go code without the need for markup.",
 						},
 					},
 				},
