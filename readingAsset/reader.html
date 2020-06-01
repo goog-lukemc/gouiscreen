@@ -1,0 +1,230 @@
+<html id="html">
+
+<head id="head">
+    <meta charset="utf-8">
+    <title id="title">Reader</title>
+</head>
+
+<body id="body" data-gr-c-s-loaded="true">
+
+    <script src="/js/wasm_exec.js"></script>
+    <script>
+        if (!WebAssembly.instantiateStreaming) { // polyfill
+            WebAssembly.instantiateStreaming = async (resp, importObject) => {
+                const source = await (await resp).arrayBuffer();
+                return await WebAssembly.instantiate(source, importObject);
+            };
+        }
+
+        const go = new Go();
+        let mod, inst;
+        WebAssembly.instantiateStreaming(fetch("/wasm/app.wasm"), go.importObject).then((result) => {
+            go.run(result.instance)
+
+        }).catch((err) => {
+            console.error(err);
+        });
+
+    </script>
+
+
+    <div id="662856038">
+        <div class="grid container" id="3661559495">
+            <div class="works-index" id="3713465399">
+                <div id="2413294264">
+                    <ul id="1293870532">
+                        <li id="2033738603">Welcome to the Go UI framework using Webassembly</li>
+                    </ul>
+                </div>
+            </div>
+            <article id="3696687780"><span class="heading" id="3546089152">Welcome to the Go UI framework using
+                    Webassembly</span><span class="subheading" id="3562866771">And Here we are!</span>
+                <section id="3579644390"><img src="/image/go-logo_blue.svg" id="1361035437"><span class="sectionheading"
+                        id="1344257818">The Good Stuff</span><span id="1327480199">The guiding principal of this project
+                        is to take a subset of the existing HTML, and javascript specifications and port them to gos
+                        webassembly implementation. From these building block UI can be represented in idiomatic go code
+                        without the need for markup.</span></section>
+            </article>
+            <div class="article-index" id="3747020637"></div>
+        </div>
+    </div>
+    <style>
+            div{
+
+            }
+
+            img{
+
+            }
+
+            code{
+
+            }
+
+            pre{
+
+            }
+
+            span{
+
+            }
+
+            li{
+
+            }
+
+            section{
+
+            }
+
+            ul{
+
+            }
+
+            html{
+
+            }
+
+            article{
+
+            }
+
+            /**/
+            .sectionheading{
+
+            }
+
+            /**/
+            .article-index{
+
+            }
+
+            /**/
+            .heading{
+
+            }
+
+            /**/
+            .subheading{
+
+            }
+
+            /**/
+            .works-index{
+
+            }
+
+            /**/
+            .grid{
+
+            }
+
+            /**/
+            .container{
+
+            }
+
+            /* html */
+            [id='html']{
+
+            }
+
+            /* html/body */
+            [id='body']{
+
+            }
+
+            /* html/body/662856038 */
+            [id='662856038']{
+
+            }
+
+            /* html/body/662856038/3661559495 */
+            [id='3661559495']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780 */
+            [id='3696687780']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780/3546089152 */
+            [id='3546089152']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780/3562866771 */
+            [id='3562866771']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780/3579644390 */
+            [id='3579644390']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780/3579644390/1327480199 */
+            [id='1327480199']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780/3579644390/1344257818 */
+            [id='1344257818']{
+
+            }
+
+            /* html/body/662856038/3661559495/3696687780/3579644390/1361035437 */
+            [id='1361035437']{
+
+            }
+
+            /* html/body/662856038/3661559495/3713465399 */
+            [id='3713465399']{
+
+            }
+
+            /* html/body/662856038/3661559495/3713465399/2413294264 */
+            [id='2413294264']{
+
+            }
+
+            /* html/body/662856038/3661559495/3713465399/2413294264/1293870532 */
+            [id='1293870532']{
+
+            }
+
+            /* html/body/662856038/3661559495/3713465399/2413294264/1293870532/2033738603 */
+            [id='2033738603']{
+
+            }
+
+            /* html/body/662856038/3661559495/3747020637 */
+            [id='3747020637']{
+
+            }
+
+            /* html/body/679633657 */
+            [id='679633657']{
+
+            }
+
+            /* html/body/679633657/2119483375 */
+            [id='2119483375']{
+
+            }
+
+            /* html/body/679633657/2119483375/3748956915 */
+            [id='3748956915']{
+
+            }
+
+            /* html/head */
+            [id='head']{
+
+            }
+
+    </style>
+</body>
+
+</html>
