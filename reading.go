@@ -20,6 +20,9 @@ func DocReader(parent string, comp *gouielement.ElementLib, works *WorksData) {
 	// Create a body centering div
 	cd := comp.Div(parent, map[string]string{})
 
+	// Create a container wrapper
+	wd := comp.WrapperDiv(gouielement.PathOf(cd))
+
 	// Create the left side bar which create a left had list of the documents in the collection
 
 	wk := comp.Div(gouielement.PathOf(cd), map[string]string{}, "works-index")
@@ -27,7 +30,7 @@ func DocReader(parent string, comp *gouielement.ElementLib, works *WorksData) {
 
 	// Content Body
 	for _, a := range works.Articles {
-		comp.Readable(gouielement.PathOf(cd), a)
+		comp.Readable(gouielement.PathOf(wd), a)
 	}
 
 	// Create a right hand index of the sub headings in the document
