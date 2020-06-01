@@ -25,7 +25,7 @@ func DocReader(parent string, comp *gouielement.ElementLib, works *WorksData) {
 
 	// Create the left side bar which create a left had list of the documents in the collection
 
-	wk := comp.Div(gouielement.PathOf(cd), map[string]string{}, "works-index")
+	wk := comp.Div(gouielement.PathOf(wd), map[string]string{}, "works-index")
 	comp.UnOrderedList(gouielement.PathOf(wk), getWorksIndex(works))
 
 	// Content Body
@@ -35,7 +35,7 @@ func DocReader(parent string, comp *gouielement.ElementLib, works *WorksData) {
 
 	// Create a right hand index of the sub headings in the document
 	// TODO: Implement
-	comp.Div(gouielement.PathOf(cd), map[string]string{}, "article-index")
+	comp.Div(gouielement.PathOf(wd), map[string]string{}, "article-index")
 
 }
 
